@@ -1,0 +1,22 @@
+# Generic files to be ignored
+*~
+*.lock
+*.out
+*.swp
+*.DS_Store
+*.project
+
+# Text files
+*.dat
+*.log
+*.txt
+
+# Compiled Object files
+*.class
+
+# Compiled Libraries
+*.jar
+
+# Generic folders to be ignored
+log/*
+tmp/*
