@@ -25,7 +25,7 @@ import java.util.logging.Logger;
 /**
  * This class implements a Runnable entity, so it can be detached as a Thread.
  * It will be used in the thread pool to server individually a client session.
- *  
+ *
  * @author Paolo Maresca <plo.maresca@gmail.com>
  */
 public class ServiceThread implements Runnable
@@ -43,16 +43,16 @@ public class ServiceThread implements Runnable
     private CommandParser parser;
     // interpreter: manages the interpretation of the commands
     private CommandInterpreter interpreter;
-    
+
     // in case of session abort by client, this will be false
     private boolean sessionOpen;
-    
+
     // stream to read the client commands
     private BufferedReader cmdReader;
     // stream to write the server responses
     private PrintWriter responseWriter;
-    
-    public ServiceThread(Socket clientChannel, String threadIdentity) 
+
+    public ServiceThread(Socket clientChannel, String threadIdentity)
     {
         super();
         sessionSocket = clientChannel;
@@ -63,19 +63,19 @@ public class ServiceThread implements Runnable
         parser = new CommandParser();
         interpreter = new CommandInterpreter();
     }
-    
-    public void run() 
+
+    public void run()
     {
         theLogger.info("Entering the Client Worker Thread :: "+threadId);
         try {
             registerCommands();
         } catch (ServiceException ex) {
-            theLogger.log(Level.SEVERE, "Unable to register the commmands: impossible to proceed", 
+            theLogger.log(Level.SEVERE, "Unable to register the commmands: impossible to proceed",
                     ex);
             try {
                 sessionSocket.close();
             } catch (IOException ex1) {
-                theLogger.log(Level.SEVERE, "Error Caught in closing the client socket", 
+                theLogger.log(Level.SEVERE, "Error Caught in closing the client socket",
                         ex1);
             }
             return;
@@ -121,25 +121,25 @@ public class ServiceThread implements Runnable
                 responseWriter.flush();
             }
         } catch (IOException ex) {
-             theLogger.log(Level.SEVERE, "Error Caught: I/O exception, unable to proceed", 
+             theLogger.log(Level.SEVERE, "Error Caught: I/O exception, unable to proceed",
                         ex);
         } catch (ServiceException ex) {
-            theLogger.log(Level.SEVERE, "Error Caught: Interpreter Unable to interpret the Query", 
+            theLogger.log(Level.SEVERE, "Error Caught: Interpreter Unable to interpret the Query",
                         ex);
         }finally {
             try {
                 sessionSocket.close();
                 responseWriter.close();
             } catch (IOException ex) {
-                 theLogger.log(Level.SEVERE, "Error Caught in closing the client socket", 
+                 theLogger.log(Level.SEVERE, "Error Caught in closing the client socket",
                         ex);
-            }
+                }
         }
     }
-    
+
     /**
      * Internal Utility method to register the commands.
-     * 
+     *
      * @throws ServiceException In case some step goes wrong in the registration
      */
     private void registerCommands() throws ServiceException
@@ -164,5 +164,5 @@ public class ServiceThread implements Runnable
         interpreter.setActualSession(ServerContext.getInstance().getServerSession(threadId));
         interpreter.setSessionId(threadId);
     }
-    
+
 }

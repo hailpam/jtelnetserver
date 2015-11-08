@@ -97,13 +97,56 @@ the following setting should be done (according to the environment).
 The file is stored under
 
  jtelnetserver/src/main/resources
+
+
+Example
+_______
+
+ > mvn exec:java
+ Starting the Connector Thread...
+ Nov 08, 2015 9:43:01 AM it.pm.jtelnetserver.thread.ConnectorThread run
+ INFO: 
+ +--Server Info
+     OS :: Linux, architecture :: amd64, version:: 3.10.0-229.14.1.el7.x86_64
+     home :: /home/hailpam
+     sessions # ::      0
+ +--
+ Nov 08, 2015 9:43:01 AM it.pm.jtelnetserver.thread.ConnectorThread run
+ INFO: Server is Running
  
+ > telnet localhost 20000
+ prompt> ls
+
+ total 13
+ d   r w e 0        13 Jul   settings                                                              
+ d   r w e 0        12 Jul   environments                                                          
+ d   r w e 4        12 Oct   tools                                                                 
+ d   r w e 0        26 Feb   libs                                                                  
+ d   r w e 0        26 Feb   archive                                                               
+ d   r w e 0        26 Feb   deliverables                                                          
+ d   r w e 0        26 Feb   data                                                                  
+ d   r w e 4        02 Nov   scripts                                                               
+ d   r w e 0        13 Jul   servers                                                               
+ d   r w e 0        26 Feb   brokers                                                               
+ f   r w - 1        04 Jun   cli-usage                                                             
+ d   r w e 4        10 Oct   workspaces                                                            
+ d   r w e 0        13 Jul   runtimes
+ 
+ prompt> status
+
+ session status: 
+  is active :: true
+  server command(s) #:: 12
+  service failure(s) #:: 1
+  uptime :: 329517ms
+
+
 Versions
 ________
 
-1.0 - first relesae
-1.1 - second release: fixed some issues with Windows display (line 
-      separator incompatibility)
+- 1.0 - first relesae
+- 1.1 - second release: fixed some issues with Windows display (line 
+        separator incompatibility)
 
 
 

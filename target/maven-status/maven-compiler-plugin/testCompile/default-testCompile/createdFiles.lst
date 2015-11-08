@@ -1,0 +1,13 @@
+it/pm/jtelnetserver/util/ConfigurationManagerTest.class
+it/pm/jtelnetserver/interpreter/CommandInterpreterTest.class
+it/pm/jtelnetserver/interpreter/cmd/LsCommandHandlerTest.class
+it/pm/jtelnetserver/interpreter/ExecutionReportTest.class
+it/pm/jtelnetserver/interpreter/cmd/CdCommandHandlerTest.class
+it/pm/jtelnetserver/util/ServiceExceptionTest.class
+it/pm/jtelnetserver/interpreter/CommandParserTest.class
+it/pm/jtelnetserver/context/ServerSessionTest.class
+it/pm/jtelnetserver/context/ServerContextTest.class
+it/pm/jtelnetserver/interpreter/ClientCommandTest.class
+it/pm/jtelnetserver/display/DisplayHelperTest.class
+it/pm/jtelnetserver/interpreter/cmd/MkdirCommandHandlerTest.class
+it/pm/jtelnetserver/ServerLauncherTest.class

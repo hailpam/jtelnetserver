@@ -1,0 +1,13 @@
+/home/pmaresca/Developments/workspaces/java/jtelnetserver/src/test/java/it/pm/jtelnetserver/interpreter/ClientCommandTest.java
+/home/pmaresca/Developments/workspaces/java/jtelnetserver/src/test/java/it/pm/jtelnetserver/interpreter/CommandInterpreterTest.java
+/home/pmaresca/Developments/workspaces/java/jtelnetserver/src/test/java/it/pm/jtelnetserver/interpreter/ExecutionReportTest.java
+/home/pmaresca/Developments/workspaces/java/jtelnetserver/src/test/java/it/pm/jtelnetserver/interpreter/CommandParserTest.java
+/home/pmaresca/Developments/workspaces/java/jtelnetserver/src/test/java/it/pm/jtelnetserver/interpreter/cmd/CdCommandHandlerTest.java
+/home/pmaresca/Developments/workspaces/java/jtelnetserver/src/test/java/it/pm/jtelnetserver/util/ServiceExceptionTest.java
+/home/pmaresca/Developments/workspaces/java/jtelnetserver/src/test/java/it/pm/jtelnetserver/context/ServerContextTest.java
+/home/pmaresca/Developments/workspaces/java/jtelnetserver/src/test/java/it/pm/jtelnetserver/interpreter/cmd/LsCommandHandlerTest.java
+/home/pmaresca/Developments/workspaces/java/jtelnetserver/src/test/java/it/pm/jtelnetserver/util/ConfigurationManagerTest.java
+/home/pmaresca/Developments/workspaces/java/jtelnetserver/src/test/java/it/pm/jtelnetserver/display/DisplayHelperTest.java
+/home/pmaresca/Developments/workspaces/java/jtelnetserver/src/test/java/it/pm/jtelnetserver/context/ServerSessionTest.java
+/home/pmaresca/Developments/workspaces/java/jtelnetserver/src/test/java/it/pm/jtelnetserver/interpreter/cmd/MkdirCommandHandlerTest.java
+/home/pmaresca/Developments/workspaces/java/jtelnetserver/src/test/java/it/pm/jtelnetserver/ServerLauncherTest.java
