@@ -103,6 +103,8 @@ Example
 _______
 
  > mvn exec:java
+
+```
  Starting the Connector Thread...
  Nov 08, 2015 9:43:01 AM it.pm.jtelnetserver.thread.ConnectorThread run
  INFO: 
@@ -113,10 +115,12 @@ _______
  +--
  Nov 08, 2015 9:43:01 AM it.pm.jtelnetserver.thread.ConnectorThread run
  INFO: Server is Running
- 
+```
+
  > telnet localhost 20000
  prompt> ls
 
+```
  total 13
  d   r w e 0        13 Jul   settings                                                              
  d   r w e 0        12 Jul   environments                                                          
@@ -131,15 +135,17 @@ _______
  f   r w - 1        04 Jun   cli-usage                                                             
  d   r w e 4        10 Oct   workspaces                                                            
  d   r w e 0        13 Jul   runtimes
- 
+ ```
+
  prompt> status
 
+```
  session status: 
   is active :: true
   server command(s) #:: 12
   service failure(s) #:: 1
   uptime :: 329517ms
-
+```
 
 Versions
 ________
